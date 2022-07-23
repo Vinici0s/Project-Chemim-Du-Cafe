@@ -10,7 +10,7 @@ body{
 /*      Cabeçalho     */
 
 .container-bar{
-    background-color: #f7f7f7;
+    background-color: #FFF;
     width: 100%;
     height: 125px;
 }
@@ -18,25 +18,26 @@ body{
 .logo-container{
     margin-left: 25px;
     position: relative;
-    bottom: 5px;
-    left: 100px;
+    bottom: 15px;
+    left: 50px;
     clear: both;
 }
 
 .logo-container img{
-    width: 250px;
-    height: 125px;
+    width: 280px;
+    height: 150px;
     float: left;
 }
 
 .frase-logo{
     position: absolute;
-    left: 475px;
+    left: 415px;
     top: 45px;
 }
 
 .frase-logo p{
-    font-size: 20px;
+    font-size: 30px;
+    color: #f0d394;
 }
 
 #nav-menu{
@@ -55,6 +56,7 @@ body{
 .nav-bar li a{
     color: #f0d394;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .button{
@@ -66,4 +68,34 @@ body{
     background-color: #f0d394;
     color: #98651e;
     border: 1px solid #98651e;
+}
+
+/*      Corpo da pagina       */
+
+.main-container{
+    max-width: 100%;
+    height: 700px;
+    clear: both;
+}
+
+.img-main img{
+    width: 100%;
+    height: 950px;
+}
+
+.banner-main{
+    width: 300px;
+    height: 500px;
+    background-color: #98651e;
+    color: #FFF;
+    position: absolute;
+    float: left;
+    left: 150px;
+    top: 250px;
+}
+
+.banner-main img{
+    position: absolute;
+    width: 100%;
+    height: 300px;
 }
