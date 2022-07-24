@@ -43,8 +43,8 @@ body{
 #nav-menu{
     position: absolute;
     right: 0;
-    margin-right: 50px;
-    margin-top: 50px;
+    margin-right: 45px;
+    margin-top: 65px;
 }
 
 .nav-bar li{
@@ -63,6 +63,7 @@ body{
     background-color: #98651e;
     padding: 25px 40px;
     border: 1px solid transparent;
+    box-shadow: 5px 5px 10px #DDD;
 }
 .button:hover{
     background-color: #f0d394;
@@ -93,6 +94,7 @@ body{
     float: left;
     left: 150px;
     top: 250px;
+    box-shadow: 2px 6px 6px rgb(173, 173, 173);
 }
 
 .banner-main img{
