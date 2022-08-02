@@ -8,174 +8,196 @@ body{
     overflow-x: hidden;
 }
 
-/*      Cabeçalho     */
+/*        Header        */
 
-.container-bar{
-    background-color: #FFF;
+.header-container{
+    background-image: url(../imgs/background-chemim.jpg);
     width: 100%;
-    height: 125px;
+    height: 800px;
+    background-size: cover;
+    background-position-y: -140px;
 }
 
-.logo-container{
-    margin-left: 25px;
-    position: relative;
-    bottom: 15px;
-    left: 50px;
-    clear: both;
+.filter-container{
+    background-color: #111214;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
 }
 
-.logo-container img{
-    width: 280px;
-    height: 150px;
-    float: left;
-}
-
-.frase-logo{
+.nav-bar{
     position: absolute;
-    left: 415px;
-    top: 45px;
+    right: 50px;
+    top: 30px;
 }
 
-.frase-logo p{
-    font-size: 30px;
-    color: #f0d394;
-}
-
-#nav-menu{
-    position: absolute;
-    right: 0;
-    margin-right: 45px;
-    margin-top: 65px;
-}
-
-.nav-bar li{
+.menu-bar li{
     display: inline-block;
     list-style: none;
-
 }
 
-.nav-bar li a{
-    color: #f0d394;
+.menu-bar li a{
     text-decoration: none;
-    font-weight: 600;
+    color: #DCD7C9;
+    font-weight: 400;
+    font-size: 20px
 }
 
 .button{
-    background-color: #98651e;
-    padding: 25px 40px;
-    border: 1px solid transparent;
-    box-shadow: 5px 5px 10px #DDD;
+    margin: 0px 10px;
 }
+
 .button:hover{
-    background-color: #f0d394;
-    color: #98651e;
-    border: 1px solid #98651e;
-    transition: .7s;
+    text-decoration: underline #cfcb65;
 }
 
-/*      Corpo da pagina       */
-
-.main-container{
-    max-width: 100%;
-    height: 1400px;
-    clear: both;
-}
-
-.img-main img{
-    width: 100%;
-    height: 950px;
-    box-sizing: border-box;
-}
-
-.banner-main{
-    width: 300px;
-    height: 500px;
-    background-color: #98651e;
-    color: #FFF;
+.logo-container img{
     position: absolute;
-    float: left;
-    left: 150px;
-    top: 250px;
-    box-shadow: 2px 6px 6px rgb(173, 173, 173);
-}
-
-.banner-main img{
-    position: absolute;
-    width: 100%;
-    height: 325px;
-}
-
-.img-banner-two{
-    position: absolute;
-    top: 200px;
-    opacity: .9;
-}
-
-.products-container{
-    background-color: rgb(255, 255, 255);
-    width: 75%;
-    height: 1050px;
-    position: absolute;
-    left: 15%;
-    /* top: 1125px; */
-    top: 72em;
-}
-
-.products-title{
-    text-align: center;
-    position: relative;
-    top: 15px;
-}
-
-.products-title h2{
-    font-size: 24px;
-    font-family: cursive;
-    color: rgb(129, 129, 129);
-}
-
-.brand-line-one, .brand-line-two, .brand-line-three{
-    position: relative;
-    top: 35px;
-    left: 60px;
-    padding-top: 15px;
-    align-items: center;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.brand-item{
-    padding: 10px;
-    padding-top: 40px;
-    padding-right: 150px;
-    display: inline-block;
-    text-align: center;
-}
-
-.brand-item img{
     width: 150px;
     height: 150px;
-    box-shadow: 0px 5px 8px 0px rgb(170, 170, 170);
-    margin-bottom: 20px;
+    top: 170px;
+    left: 45%;
+    box-shadow: 7px 5px 5px #2C3639;
 }
 
-.brand-item p{
-    font-size: 18px;
-    font-family: Helvetica, sans-serif;
-    color: #98651e;
-    margin-bottom: 20px;
+.title{
+    position: absolute;
+    top: 380px;
+    left: 39%;
+    text-align: center;
 }
 
-.brand-item a{
-    text-decoration: none;
-    cursor: pointer;
-    color: #98651e;
-    background-color: #FFF;
-    border: 1px solid #98651e;
-    padding: 5px;
-    border-radius: 5px;
+.title h1{
+    font-size: 30px;
+    padding-bottom: 40px;
+    color: #DCD7C9;
+    margin-right: 7px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 4px 3px 3px #2C3639;
 }
 
-.brand-item a:hover{
-    text-decoration: underline;
+.title p{
+    font-size: 26px;
+    color: #DCD7C9;
+    padding: 7px 15px;
+    margin-left: 5px;
+    border-bottom: 2px solid #cfcb65;
+    border-top: 2px solid #cfcb65;
+    text-shadow: 2px 2px 2px #2C3639;
+}
+
+/*      Main      */
+
+.arrow,
+.arrow:before{
+  position: absolute;
+  left: 50%;
+}
+.arrow{
+  width: 40px;
+  height: 40px;
+  top: 90%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #DCD7C9 solid;
+  border-bottom: 2px #DCD7C9 solid;
+}
+ 
+.arrow:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #DCD7C9 solid;
+  border-bottom: 1px #DCD7C9 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}  
+
+@keyframes arrow{
+  0% {opacity: 1}
+  100% {opacity: 0;
+    transform: translate(-10px, -10px);}
+}
+
+.main-content{
+    width: 100%;
+    height: 700px;
+    background-image: url(../imgs/coffee-background.jpg);
+}
+
+.filter-container-main{
+    background-color: #111214;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    filter: blur(2px);
+}
+
+.history-title{
+    position: absolute;
+    top: 125%;
+    left: 35%;
+    
+}
+
+.history-title h2{
+    color: #FFF;
+    font-family: Coffee;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+hr.linha {
+    padding: 0;
+    border: none;
+    border-top: medium double #8c8c8c;
+    color: #8c8c8c;
+    text-align: center;
+    max-width: 80%;
+  }
+
+@font-face {
+    font-family: Coffee;
+    src: local(Coffee), url(../Milkshake.ttf);
+ }
+
+ .history-paragraph{
+    position: absolute;
+    top: 155%;
+    left: 24%;
+ }
+
+.history-paragraph p{
+    color: #FFF;
+    font-size: 20px;
+    width: 75%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding-bottom: 80px;
+}
+
+.box-section-container{
+    width: 250px;
+    height: 350px;
+    background-color: #111214;
+    margin-top: 150px;
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+.box-section-container p{
+    color: #DCD7C9;
+    font-size: 22px;
+    padding-top: 25px;
+    text-align: center;
 }
