@@ -16,6 +16,7 @@ body{
     height: 800px;
     background-size: cover;
     background-position-y: -140px;
+    background-repeat: no-repeat;
 }
 
 .filter-container{
@@ -219,4 +220,57 @@ hr.linha {
     padding-top: 25px;
     text-align: center;
     font-family: 'Lobster', cursive;
+}
+
+@media (max-width: 1366px){
+    .header-container{
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+}
+
+@media (max-width: 480px){
+    .nav-bar{
+        display: flex;
+        justify-items: center;
+    }
+    .menu-bar li{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        float: right;
+        text-align: center;
+    }
+    .menu-bar li a{
+        font-size: 14px;
+    }
+    .logo-container img{
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+    .title{
+        left:50%;
+        top:90%;
+        transform:translate(-50%,-90%);
+    }
+    .arrow{
+        top: 105%;
+    }
+    .history-title{
+        left: 1vh;
+    }
+    .card-boxes{
+        max-height: 1000px;
+        
+    }
+    .box-section-container{
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+    .header-container{
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
 }
