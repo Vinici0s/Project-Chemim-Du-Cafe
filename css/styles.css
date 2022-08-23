@@ -242,7 +242,7 @@ hr.linha {
 #newsLetter{
     background-color: #FFF;
     width: 50%;
-    height: 250px;
+    height: 280px;
     position: relative;
     left:50%;
     top:10%;
@@ -252,6 +252,59 @@ hr.linha {
 .newsLetter_title{
     text-align: center;
     padding-top: 10px
+}
+
+.newsLetter_title h3 {
+    font-size: 22px;
+    color: #121212;
+    margin-bottom: 7px;
+}
+
+.newsLetter_title p{
+    font-size: 17px;
+    color: #121212;
+    margin-bottom: 15px;
+    max-width: 70%;
+    position: relative;
+    left: 50%;
+    transform:translate(-50%);
+}
+
+.newsLetter_form form{
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform:translate(-50%);
+}
+
+#name, #email{
+    width: 400px;
+    display: block;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid #AAA;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    padding: 5px;
+    margin-top: 15px;
+    width: 150px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform:translate(-50%);
+    background-color: #3F4E4F;
+    border-radius: 2px;
+    border: 1px solid #121212;
+    color: #FFF;
+    box-shadow: 4px 2px 2px #2C3639;
+}
+
+input[type="submit"]:hover{
+    background-color: #121212;
+    border: 2px solid #3F4E4F;
 }
 
 /*          MEDIA          */
