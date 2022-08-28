@@ -37,6 +37,8 @@
             </div>
         </div>
     </header>
+    <button onclick="backTopFunction()" id="backTop" title="Back To Top">⇡</button>
+    <!--        Main content        -->
     <main>
         <div class="arrow"></div>
         <div class="main-content">
@@ -85,6 +87,7 @@
             </div>
         </div>
     </section>
+    <!--        Footer      -->
     <footer id="home_footer">
         <div id="newsLetter">
             <div class="newsLetter_title">
@@ -96,8 +99,8 @@
             </div>
             <div class="newsLetter_form">
                 <form>
-                    <input type="text" name="nome" id="name" placeholder="Nome Completo">
-                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="text" name="nome" id="name" placeholder="Nome Completo"required>
+                    <input type="email" name="email" id="email" placeholder="E-mail"required>
                     <input type="checkbox" name="agree" id="agree" value="agree" required>
                     <label for="agree">
                          Informo que desejo receber nossa Newsletter e
@@ -148,8 +151,9 @@
                 </ul>
             </nav>
         </div>
+        <div class="copyright"><p>copyright© 2022 - Chemim Du Café</p></div>
     </footer>
-
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/6e8566735f.js" crossorigin="anonymous"></script>
 </body>
 </html>
