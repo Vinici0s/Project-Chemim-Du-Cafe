@@ -52,6 +52,28 @@ body{
     text-decoration: underline #cfcb65;
 }
 
+.language-nav-bar{
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+
+.language-nav-bar li{
+    display: inline-block;
+}
+
+.language-nav-bar a img {
+    width: 40px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer; 
+    /*ajustar bandeiras */
+}
+
+.language-nav-bar a img:hover{
+    border: 1px solid #cfcb65;
+}
+
 .logo-container img{
     position: absolute;
     width: 150px;
@@ -101,6 +123,7 @@ body{
     padding: 15px; 
     border-radius: 15px; 
     font-size: 18px; 
+    transition: 1s;
 }
 
 #backTop:hover{
@@ -267,7 +290,7 @@ hr.linha {
     left:50%;
     top:10%;
     transform:translate(-50%,-10%);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .newsLetter_title{
@@ -322,7 +345,7 @@ input[type="submit"]{
     left: 50%;
     transform:translate(-50%);
     background-color: #2C3639;
-    border-radius: 2px;
+    border-radius: 20px;
     border: 1px solid #121212;
     color: #FFF;
     box-shadow: 4px 2px 2px #2C3639;
@@ -358,6 +381,7 @@ input[type="submit"]:hover{
 
 .footer-nav-bar li a{
     color: #3F4E4F;
+    text-decoration: none;
     
 }
 
